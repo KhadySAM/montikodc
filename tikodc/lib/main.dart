@@ -4,7 +4,7 @@ import 'package:tikodc/Inscription/inscription.dart';
 import 'package:tikodc/loginPhoneEmail.dart';
 
 void main() async {
- await Future.delayed(const Duration(milliseconds: 500));
+  await Future.delayed(const Duration(milliseconds: 500));
   runApp(const MyApp());
 }
 
@@ -38,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    //initialisation();
   }
 
   void initialisation() async {
@@ -49,18 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
     print('ready in 1...');
     await Future.delayed(const Duration(seconds: 1));
     print('go!');
-    //FlutterNativeSplash.remove();
   }
 
   @override
   Widget build(BuildContext context) {
     //variables
-    RoundedRectangleBorder btnBorder() {
-      return const RoundedRectangleBorder(
-          side: BorderSide(color: Colors.black, width: 2));
-    }
 
+    // ignore: non_constant_identifier_names
     double LongueurEcran = MediaQuery.of(context).size.height;
+    // ignore: non_constant_identifier_names
     double LargeurEcran = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -69,23 +65,27 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Container(
               height: LongueurEcran * 0.3,
-              color: Colors.blueGrey,
+              color: Colors.white,
               width: LargeurEcran,
               child: Column(
+                
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.tiktok),
-                 
                   Text(
                     'Connecte-toi à TikODC',
+                    
                     textAlign: TextAlign.center,
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                   )
                 ],
               ),
+              
+              
             ),
+        
+             
             Expanded(
-                child: Container(
+              child: Container(
               padding: const EdgeInsets.only(left: 30, right: 30),
               alignment: Alignment.topCenter,
               child: ListView(
@@ -131,40 +131,90 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.all(Radius.circular(5))),
                       leading: FaIcon(
                         FontAwesomeIcons.twitter,
-                        color: Color.fromARGB(255, 5, 3, 100),
+                        color: Color.fromARGB(156, 13, 102, 174),
                       ),
                       title: Text('Continuer avec Twitter'),
                     ),
                   ),
-                  
+                  const SizedBox(
+                    height: 80,
+                  ),
                   const Padding(
                     padding: EdgeInsets.only(top: 10, bottom: 10),
                     child: Text(
-                      'Vous n’avez pas de compte ?',
+                      'En continuant, tu acceptes les Conditions dutilisation de TikTok et confirmes avoir lu la Politique deconfidentialité de TikTOK',
                       textAlign: TextAlign.center,
                       style: TextStyle(),
                     ),
                   ),
-                  Card(
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(5))),
-                    color: const Color.fromARGB(255, 218, 25, 25),
-                    child: ListTile(
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) =>
-                                const inscriptionPage(title: 'Inscription')));
-                      },
-                      title: const Text(
-                        'Inscription',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                  Row(
+                    children: const [
+                      Padding(
+                        padding: EdgeInsets.only(
+                          top: 30,
+                          bottom: 0,
+                          left: 25,
+                        ),
+                        child: Text(
+                          'Vous n’avez pas de compte ?',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 20),
+                            fontSize: 15,
+                          ),
+                        ),
                       ),
-                    ),
-                  )
+                      Padding(
+                        padding: EdgeInsets.only(
+                          top: 30,
+                          bottom: 0,
+                        ),
+                        child: Text(
+                          'Inscription ?',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 218, 25, 25),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  // const Padding(
+                  //   padding: EdgeInsets.only(
+                  //     top: 30,
+                  //     bottom: 0,
+                  //   ),
+                  //   child: Text(
+                  //     'Vous n’avez pas de compte ?',
+                  //     textAlign: TextAlign.center,
+                  //     style: TextStyle(
+                  //       fontWeight: FontWeight.bold,
+                  //       fontSize: 15,
+                  //     ),
+                  //   ),
+                  // ),
+                  // Card(
+                  //   shape: const RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.all(Radius.circular(5))),
+                  //   color: const Color.fromARGB(255, 218, 25, 25),
+                  //   child: ListTile(
+                  //     onTap: () {
+                  //       Navigator.of(context).push(MaterialPageRoute(
+                  //           builder: (context) =>
+                  //               const inscriptionPage(title: 'Vous n’avez pas de compte ?')));
+                  //     },
+                  //     title: const Text(
+                  //       'Vous n’avez pas de compte ?',
+                  //       textAlign: TextAlign.center,
+                  //       style: TextStyle(
+                  //           color: Color.fromARGB(255, 255, 255, 255),
+                  //           fontWeight: FontWeight.bold,
+                  //           fontSize: 20),
+                  //     ),
+                  //   ),
+                  // )
                 ],
               ),
             )),

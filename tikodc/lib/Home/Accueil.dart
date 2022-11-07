@@ -1,6 +1,6 @@
 //widget acceuil
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tikodc/post/video.dart';
 import 'package:video_player/video_player.dart';
@@ -27,7 +27,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': 134,
         'description': 'dioba chute de Modibo Keita'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
     {
       'couleur': const Color(0xFF141518),
@@ -40,7 +40,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': 34,
         'description': 'Armée Mali 22 Septembre'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
     {
       'couleur': const Color(0xFF141518),
@@ -53,7 +53,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': '1.0K',
         'description': 'Dounoukassilen'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
     {
       'couleur': const Color(0xFF141518),
@@ -66,7 +66,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': 78,
         'description': 'Bamanan ya keh'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
     {
       'couleur': const Color(0xFF141518),
@@ -79,7 +79,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': '783.0K',
         'description': 'woronalen deh'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
     {
       'couleur': const Color(0xFF141518),
@@ -92,7 +92,7 @@ class _MonAcceuil extends State<MonAcceuil> {
         'partages': '1783.0K',
         'description': 'deh ko'
       },
-      'user': {'pseudo': 'username', 'nom': 'xxxx', 'prenom': 'yyyy'}
+      'user': {'pseudo': 'utilisateur', 'nom': 'xxxx', 'prenom': 'yyyy'}
     },
   ];
 

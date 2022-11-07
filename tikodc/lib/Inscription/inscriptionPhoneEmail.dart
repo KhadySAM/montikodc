@@ -14,7 +14,7 @@ class inscriptionPhoneEmailPage extends StatefulWidget {
 class _inscriptionPhoneEmailPage extends State<inscriptionPhoneEmailPage> {
   @override
   void initState() {
-    // TODO: implement initState
+ 
     super.initState();
   }
 
@@ -22,7 +22,7 @@ class _inscriptionPhoneEmailPage extends State<inscriptionPhoneEmailPage> {
   Widget build(BuildContext context) => DefaultTabController(
         length: 2,
 
-        // TODO: implement build
+  
         child: Scaffold(
           appBar: AppBar(
             leading: const BackButton(color: Colors.black),

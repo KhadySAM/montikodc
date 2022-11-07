@@ -29,12 +29,11 @@ class _inscriptionPage extends State<inscriptionPage> {
           children: [
             Container(
               height: LongueurEcran * 0.3,
-              color: Colors.blueGrey,
+              color: Colors.white,
               width: LargeurEcran,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.tiktok),
                   Text(
                     'Inscrit toi sur TikODC',
                     textAlign: TextAlign.center,
