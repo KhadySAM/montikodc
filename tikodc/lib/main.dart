@@ -68,24 +68,26 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.white,
               width: LargeurEcran,
               child: Column(
-                
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   Text(
                     'Connecte-toi à TikODC',
-                    
                     textAlign: TextAlign.center,
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                  )
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    'Gère ton compte, consulte les notification, commentedes vidéos et bien plus encors',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 15),
+                  ),
                 ],
               ),
-              
-              
             ),
-        
-             
             Expanded(
-              child: Container(
+                child: Container(
               padding: const EdgeInsets.only(left: 30, right: 30),
               alignment: Alignment.topCenter,
               child: ListView(
@@ -104,6 +106,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       title: const Text('Utiliser un téléphone/e-mail'),
                     ),
                   ),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   const Card(
                     child: ListTile(
                       shape: RoundedRectangleBorder(
@@ -114,6 +119,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       title: Text('Continuer avec Facebook'),
                     ),
                   ),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   const Card(
                     child: ListTile(
                       shape: RoundedRectangleBorder(
@@ -122,6 +130,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       leading: FaIcon(FontAwesomeIcons.google),
                       title: Text('Continuer avec Google'),
                     ),
+                  ),
+                  const  SizedBox(
+                    height: 15,
                   ),
                   const Card(
                     child: ListTile(
